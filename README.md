@@ -32,16 +32,26 @@ https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 
 Utilización de storybook
 
+npx -p @storybook/cli sb init
+
 https://facebook.github.io/create-react-app/docs/developing-components-in-isolation
 https://storybook.js.org/basics/writing-stories/
 https://storybook.js.org/basics/guide-react/
 https://github.com/storybooks/storybook
 
 
-
-
-
 ================
+
+https://firebase.google.com/docs/cli/?hl=es-419
+
+npm install -g firebase-tools
+
+firebase login
+
+firebase init
+
+
+https://react-calc-app.firebaseapp.com/
 
 // Firebase App is always required and must be first
 var firebase = require("firebase/app");
