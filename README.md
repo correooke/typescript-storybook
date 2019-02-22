@@ -28,6 +28,16 @@ tsconfig.json
 https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 
 
+===== 
+
+Utilización de storybook
+
+https://facebook.github.io/create-react-app/docs/developing-components-in-isolation
+https://storybook.js.org/basics/writing-stories/
+https://storybook.js.org/basics/guide-react/
+https://github.com/storybooks/storybook
+
+
 
 
 
