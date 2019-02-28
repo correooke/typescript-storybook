@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const Result = ({text}) => (
+type Prop = {
+    text: string
+}
+
+const Result: FC<Prop> = ({text}) => (
     <div className="editable-field" contentEditable={false} >
         {text || 0}
     </div>

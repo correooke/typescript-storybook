@@ -18,6 +18,7 @@ npm install --save typescript @types/node @types/react @types/react-dom @types/j
 
 yarn add typescript @types/node @types/react @types/react-dom @types/jest
 
+Para instalar typescript globalmente: npm install -g typescript
 
 === 
 
@@ -27,6 +28,41 @@ tsconfig.json
 
 https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 
+
+========
+
+
+Sobre Typescript
+
+Se utiliza el casteo de la forma (En los archivos jsx)
+
+a as typex
+
+y no se utiliza: 
+
+<typex>a
+
+Se distinguen dos tipos de elementos: los intrínsecos y los creados por el desarrollador (value-based).
+
+Los intrínsecos estan definidos en la definición de tipos de React, mediante:
+ interface IntrinsicElements
+
+
+https://medium.freecodecamp.org/effective-use-of-typescript-with-react-3a1389b6072a
+
+The only downside of using external type declarations is that it can be a bit annoying to track down bugs which are due to a versioning mismatch, or subtle bugs in type declaration files themselves. The type declaration files aren’t always supported by the original library authors.
+
+https://medium.com/@jrwebdev/react-higher-order-component-patterns-in-typescript-42278f7590fb
+
+https://github.com/piotrwitek/react-redux-typescript-guide
+
+https://medium.com/@jrwebdev/react-hooks-in-typescript-88fce7001d0d
+
+https://www.typescriptlang.org/docs/handbook/functions.html
+
+MaterialUI : https://material-ui.com/guides/typescript/
+
+Resolución de módulos: https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Module%20Resolution.md
 
 ===== 
 
@@ -73,4 +109,17 @@ firebase.initializeApp(config);
 
 
 
+===================
 
+
+
+
+
+
+    "flow.pathToFlow": "${workspaceRoot}\\\\node_modules\\\\.bin\\\\flow",
+    "flow.showUncovered": true,
+
+        "editor.quickSuggestions": {
+        "comments": false,
+        "strings": false
+    },
