@@ -8,6 +8,7 @@
     "@types/node": "^11.9.4",
     "@types/react": "^16.8.3",
     "@types/react-dom": "^16.8.2",
+    "@types/storybook__addon-actions": "^3.4.2",
     "lodash.words": "^4.2.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
@@ -34,9 +35,11 @@
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@storybook/addon-actions": "^4.1.13",
+    "@storybook/addon-info": "^4.1.13",
     "@storybook/addon-links": "^4.1.13",
     "@storybook/addons": "^4.1.13",
     "@storybook/react": "^4.1.13",
+    "@types/storybook__react": "^4.0.1",
     "babel-loader": "^8.0.5"
   }
 }

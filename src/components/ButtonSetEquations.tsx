@@ -1,7 +1,12 @@
-import React from 'react';
-import Button from './Button';
+import React, {FC} from 'react';
+import Button, {ButtonClickHandler} from './Button';
 
-const ButtonSetEquations = ({onClickEquation, onClickEqual}) => (
+type Props = {
+  onClickEquation: ButtonClickHandler, 
+  onClickEqual: ButtonClickHandler
+}
+
+const ButtonSetEquations: FC<Props> = ({onClickEquation, onClickEqual}) => (
     <section className="button-set--equations">
       <Button text="+" clickHandler={onClickEquation} />
       <Button text="-" clickHandler={onClickEquation} />

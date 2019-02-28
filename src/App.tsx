@@ -29,7 +29,7 @@ const App: FC = () => {
     <main className="react-calculator">
       <Result text={numbers.length ? numbers[numbers.length - 1] : numbers[0]} />
       <ButtonSetNumbers 
-        onClickNumber={(number: number) => setStack(`${stack}${number}`)} />
+        onClickNumber={(number: string) => setStack(`${stack}${number}`)} />
       <ButtonSetFunctions
         onContentClear={() => setStack('')} 
         onDelete={() => {}} />
