@@ -13,8 +13,8 @@ const renderButtons = (onClickNumber : ButtonClickHandler) => (numbers.map( (num
 
 // Chequea aunque se invoque a un componente que es javascript
 
-const ButtonSetNumbers: FC<Props> = ({onClickNumber}) => (
-    <section className="button-set--numbers">
+const Numbers: FC<Props> = ({onClickNumber}) => (
+    <section className="numbers">
         {
             renderButtons(onClickNumber)
         }
@@ -22,4 +22,4 @@ const ButtonSetNumbers: FC<Props> = ({onClickNumber}) => (
 );
 
 // Array(10).fill()
-export default ButtonSetNumbers;
+export default Numbers;

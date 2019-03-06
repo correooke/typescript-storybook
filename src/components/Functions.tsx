@@ -6,12 +6,12 @@ type Props = {
     onDelete: ButtonClickHandler
 }
 
-const ButtonSetFunctions: FC<Props> = ({onContentClear, onDelete}) => (
-    <section className="button-set--functions">
+const Functions: FC<Props> = ({onContentClear, onDelete}) => (
+    <section className="functions">
         <Button type="long-text" text="clear" clickHandler={onContentClear} />
         <Button text="&larr;" clickHandler={onDelete} />
     </section>
 );
 
-export default ButtonSetFunctions;
+export default Functions;
 

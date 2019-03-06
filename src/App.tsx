@@ -2,9 +2,9 @@ import React, {useState, FC} from 'react';
 import words from 'lodash.words'
 import './App.css';
 import Result from './components/Result';
-import ButtonSetNumbers from './components/ButtonSetNumbers';
-import ButtonSetFunctions from './components/ButtonSetFunctions';
-import ButtonSetEquations from './components/ButtonSetEquations';
+import Numbers from './components/Numbers';
+import Functions from './components/Functions';
+import MathOperations from './components/MathOperations';
 
 const App: FC = () => {
   const [stack, setStack] = useState('')
@@ -28,13 +28,13 @@ const App: FC = () => {
   return (
     <main className="react-calculator">
       <Result text={numbers.length ? numbers[numbers.length - 1] : numbers[0]} />
-      <ButtonSetNumbers 
+      <Numbers 
         onClickNumber={(number: string) => setStack(`${stack}${number}`)} />
-      <ButtonSetFunctions
+      <Functions
         onContentClear={() => setStack('')} 
         onDelete={() => {}} />
-      <ButtonSetEquations 
-        onClickEquation={(eq: any) => setStack(`${stack}${eq}`)} 
+      <MathOperations 
+        onClickOperation={(eq: any) => setStack(`${stack}${eq}`)} 
         onClickEqual={() => setStack(eval(`${stack}`))} />      
     </main>
   );
