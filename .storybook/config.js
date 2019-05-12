@@ -1,16 +1,10 @@
-/*import { configure } from '@storybook/react';
-
-function loadStories() {
-  require('../src/stories');
-}
-
-configure(loadStories, module);*/
-
 import { configure } from '@storybook/react';
+import '@storybook/addon-console';
 
-const req = require.context('../src/components', true, /\.stories\.js$|\.stories\.tsx$/);
+const req = require.context('../src/components', true, /\.stories\.js$|\.stories\.tsx$/ );
 
 function loadStories() {
+  // require('../src/stories');
   req.keys().forEach(filename => req(filename));
 }
 

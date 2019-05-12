@@ -1,11 +1,10 @@
-import React, {FC} from 'react';
-import Button, {ButtonClickHandler} from './Button';
+import React, { FC } from 'react';
+import Button, { ButtonClickHandler } from './Button';
 
 type Props = {
-  onClickOperation: ButtonClickHandler, 
+  onClickOperation: ButtonClickHandler,
   onClickEqual: ButtonClickHandler
 }
-
 const MathOperations: FC<Props> = ({onClickOperation, onClickEqual}) => (
     <section className="math-operations">
       <Button text="+" clickHandler={onClickOperation} />

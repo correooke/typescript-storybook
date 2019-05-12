@@ -1,15 +1,15 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 
-export type ButtonClickHandler = (text: string) => void;
+export type ButtonClickHandler = (text: string) => void
 
 type Props = {
-    type?: string, 
+    buttonType?: string, 
     text: string, 
     clickHandler: ButtonClickHandler
 }
 
-const Button: FC<Props> = ({type, text, clickHandler}) => (
-    <button className={type} onClick={() => clickHandler(text)}>
+const Button : FC<Props> = ({buttonType, text, clickHandler}) => (
+    <button className={buttonType} onClick={() => clickHandler(text)}>
         <span className="title">{text}</span>
     </button>
 );

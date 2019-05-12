@@ -1,14 +1,14 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 import Button, { ButtonClickHandler } from './Button';
 
 type Props = {
-    onContentClear: ButtonClickHandler, 
+    onContentClear: ButtonClickHandler,
     onDelete: ButtonClickHandler
 }
 
-const Functions: FC<Props> = ({onContentClear, onDelete}) => (
+const Functions : FC<Props> = ({onContentClear, onDelete}) => (
     <section className="functions">
-        <Button type="long-text" text="clear" clickHandler={onContentClear} />
+        <Button buttonType="long-text" text="clear" clickHandler={onContentClear} />
         <Button text="&larr;" clickHandler={onDelete} />
     </section>
 );
